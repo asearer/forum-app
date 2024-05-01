@@ -1,0 +1,39 @@
+.thread-list {
+    margin: 20px 20px 20px 20px;  /* Consistent margin with NewsList */
+    padding: 15px;  
+    background-color: #f0f0f0;  /* Same background color */
+    border-radius: 8px;  /* Same border radius */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* Same shadow */
+    width: 80%;  /* Consistent width */
+    max-width: 50%;  /* Consistent maximum width */
+    position: relative;  /* Similar positioning */
+    
+}
+
+ul {
+    list-style-type: none;  /* No bullets */
+    padding: 0;  /* No padding */
+}
+
+li {
+    background-color: #ffffff;  /* Same list item background */
+    margin-bottom: 8px;  /* Same margin */
+    padding: 10px;  /* Same padding */
+    border-radius: 5px;  /* Same border radius */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);  /* Lighter shadow for list items */
+}
+
+h3 {
+    margin-top: 0;
+    color: #333;  /* Same text color */
+    font-size: 1rem;  /* Same font size */
+}
+
+p {
+    font-size: 0.85rem;  /* Same font size */
+    color: #666;  /* Same text color */
+    margin-bottom: 5px;  /* Same margin */
+}
+
+
+

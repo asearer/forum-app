@@ -1,0 +1,42 @@
+.forum-topic {
+    background-color: #fff;  /* White background for a clean look */
+    margin: 20px;  /* Consistent outer spacing */
+    padding: 20px;  /* Ample inner spacing for readability */
+    border-radius: 8px;  /* Rounded corners for a smooth appearance */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+    font-family: Arial, sans-serif;  /* Standard font for consistency */
+}
+
+.forum-content {
+    margin: 15px 0;  /* Space between text and header/footer */
+    color: #333;  /* Dark grey for text for readability */
+    line-height: 1.6;  /* Improved line spacing for easier reading */
+}
+
+.forum-footer {
+    font-size: 0.85rem;  /* Smaller font for meta information */
+    color: #666;  /* Lighter grey for less emphasis on footer details */
+    display: flex;  /* Flexbox for layout control */
+    justify-content: space-between;  /* Spacing items on both ends */
+    margin-top: 10px;  /* Space above the footer */
+}
+
+.forum-interactions {
+    display: flex;  /* Flexbox for layout control */
+    justify-content: start;  /* Align buttons to the start */
+    gap: 10px;  /* Space between buttons */
+}
+
+.forum-interactions button {
+    background-color: #007BFF;  /* Brand color for buttons */
+    color: white;  /* White text for contrast */
+    border: none;  /* No border for a clean button look */
+    border-radius: 5px;  /* Rounded corners for buttons */
+    padding: 8px 16px;  /* Padding for button size */
+    cursor: pointer;  /* Cursor pointer for interactive elements */
+}
+
+.forum-interactions button:hover {
+    background-color: #0056b3;  /* Darker blue on hover for visual feedback */
+}
+

@@ -1,0 +1,17 @@
+.register {
+    padding: 20px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.register form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.register form input,
+.register form button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
