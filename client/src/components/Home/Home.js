@@ -8,7 +8,7 @@ function Home() {
     return (
         <div className="home">
             <h1>Welcome to the Forum</h1>
-            <p>This is the homepage of your forum app. Here you can see the latest threads and updates.</p>
+            <p>This is the homepage of the forum app. Here you can see the latest threads and updates.</p>
             <div className="lists-container">
                 <ThreadList />
                 <NewsList />
