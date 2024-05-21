@@ -1,16 +1,21 @@
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
-import { MemoryRouter, Route } from 'react-router-dom';
+import { MemoryRouter, Route, useParams } from 'react-router-dom'; // Import useParams directly
 import ForumTopic from './ForumTopic';
 
 // Mock useParams to return a specific id
 jest.mock('react-router-dom', () => ({
   ...jest.requireActual('react-router-dom'),
-  useParams: () => ({ id: '123' })
+  useParams: jest.fn() // Mock useParams as a jest function
 }));
 
 describe('ForumTopic component', () => {
+  afterEach(() => {
+    jest.clearAllMocks(); // Ensure mocks are cleared after each test
+  });
+
   test('renders loading state initially', () => {
+    useParams.mockReturnValue({ id: '123' }); // Mock the return value of useParams
     render(
       <MemoryRouter initialEntries={['/forum/123']}>
         <Route path="/forum/:id">
@@ -23,6 +28,7 @@ describe('ForumTopic component', () => {
   });
 
   test('renders topic details after fetching data', async () => {
+    useParams.mockReturnValue({ id: '123' }); // Mock the return value of useParams
     render(
       <MemoryRouter initialEntries={['/forum/123']}>
         <Route path="/forum/:id">
@@ -39,6 +45,7 @@ describe('ForumTopic component', () => {
   });
 
   test('renders formatted date correctly', async () => {
+    useParams.mockReturnValue({ id: '123' }); // Mock the return value of useParams
     render(
       <MemoryRouter initialEntries={['/forum/123']}>
         <Route path="/forum/:id">
@@ -54,6 +61,7 @@ describe('ForumTopic component', () => {
   });
 
   test('renders like and comment buttons', async () => {
+    useParams.mockReturnValue({ id: '123' }); // Mock the return value of useParams
     render(
       <MemoryRouter initialEntries={['/forum/123']}>
         <Route path="/forum/:id">
