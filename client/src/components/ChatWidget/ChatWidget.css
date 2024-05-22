@@ -1,60 +1,99 @@
 /* ChatWidget.css */
 
+/* This class defines the container for the chat interface */
 .chat-container {
+    /* Position the container fixed to stay in place while scrolling */
     position: fixed;
+    /* Center the container both vertically and horizontally */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* Set width and height for the container */
     width: 300px;
     height: 400px;
+    /* Add a border around the container */
     border: 1px solid #ccc;
+    /* Apply border radius to give rounded corners */
     border-radius: 10px;
+    /* Set background color for the container */
     background-color: #fff;
+    /* Add shadow to create a 3D effect */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Use flexbox to organize the elements inside the container */
     display: flex;
     flex-direction: column;
+    /* Hide overflow to prevent content from overflowing */
     overflow: hidden;
-  }
-  
-  .chat-header {
+}
+
+/* Style for the header of the chat interface */
+.chat-header {
+    /* Add padding to create space around the content */
     padding: 10px;
+    /* Set background color for the header */
     background-color: #007bff;
+    /* Set text color to white for better contrast */
     color: white;
+    /* Center align text within the header */
     text-align: center;
-  }
-  
-  .chat-body {
+}
+
+/* Style for the body of the chat interface */
+.chat-body {
+    /* Allow body to grow and fill available space */
     flex: 1;
+    /* Add padding to create space around the content */
     padding: 10px;
+    /* Enable vertical scrolling for overflowed content */
     overflow-y: auto;
-  }
-  
-  .chat-footer {
+}
+
+/* Style for the footer of the chat interface */
+.chat-footer {
+    /* Add padding to create space around the content */
     padding: 10px;
+    /* Use flexbox to organize elements horizontally */
     display: flex;
-  }
-  
-  .input {
+}
+
+/* Style for the input field */
+.input {
+    /* Allow input field to grow and fill available space */
     flex: 1;
+    /* Add padding to create space around the input */
     padding: 10px;
+    /* Add border around the input field */
     border: 1px solid #ccc;
+    /* Apply border radius to give rounded corners */
     border-radius: 5px;
+    /* Add margin to separate input from button */
     margin-right: 10px;
-  }
-  
-  .button {
+}
+
+/* Style for the button */
+.button {
+    /* Add padding to create space around the button text */
     padding: 10px 20px;
+    /* Set background color for the button */
     background-color: #007bff;
+    /* Set text color to white for better contrast */
     color: white;
+    /* Remove border around the button */
     border: none;
+    /* Apply border radius to give rounded corners */
     border-radius: 5px;
+    /* Set cursor to pointer to indicate interactivity */
     cursor: pointer;
-  }
-  
-  .message {
+}
+
+/* Style for individual messages in the chat */
+.message {
+    /* Add margin to separate messages */
     margin-bottom: 10px;
+    /* Set background color for the message */
     background-color: #f1f1f1;
+    /* Add padding to create space around the message content */
     padding: 10px;
+    /* Apply border radius to give rounded corners */
     border-radius: 5px;
-  }
-  
+}
